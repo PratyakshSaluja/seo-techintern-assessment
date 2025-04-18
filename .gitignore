@@ -1,0 +1,51 @@
+# Composer vendor
+/vendor/
+
+# Composer lock
+/composer.lock
+
+# Node modules
+/node_modules/
+
+# Environment files
+/.env
+/env
+/public/env
+
+# CI4 writable runtime (cache, logs, sessions, uploads)
+/writable/*
+!/writable/.gitignore
+/writable/logs/*
+!/writable/logs/.gitignore
+/writable/cache/*
+!/writable/cache/.gitignore
+/writable/session/*
+!/writable/session/.gitignore
+/writable/uploads/*
+!/writable/uploads/.gitignore
+/writable/debugbar/*
+!/writable/debugbar/.gitkeep
+
+# PHPUnit & coverage
+phpunit.xml
+phpunit.xml.dist
+phpunit.result.cache
+/tests/_support/_generated_output/
+/tests/coverage/
+/coverage/
+/coverage.txt
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+*~
+
+# Editor & IDE
+/.idea/
+/.vscode/
+/nbproject/
+/*.iml
+
+# Backup files
+*.bak
+*.orig
