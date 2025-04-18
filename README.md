@@ -24,18 +24,18 @@ We've focused on making sure the URLs are clean (like `/product/my-cool-gadget` 
     *   **Custom SEO Fields:** You can write your own specific 'Meta Title' and 'Meta Description' for any category or product if you don't like the automatic ones.
     *   **Image Upload:** Lets you upload a picture for each product.
 *   **Other SEO Bits:**
-    *   **Sitemap (`/sitemap.xml`):** Automatically generates a list of all your important pages (homepage, categories, products) for search engines to find easily.
+    *   **Sitemap (`/sitemap.xml`):** Automatically generates a list of all your important pages (homepage, categories, products) for search engines to find easily. **Important:** It uses the `app.baseURL` from your `.env` file, so make sure this is set to your live domain before deploying!
     *   **Robots.txt (`/robots.txt`):** A simple file that tells search engine bots which parts of the site they shouldn't try to index (like the admin section or system folders).
 
 ## Tech Used
 
-*   **PHP:** Version 8.0 or higher is best.
-*   **Framework:** CodeIgniter 4 (It handles a lot of the boring stuff).
-*   **Database:** MySQL (The kind you usually get with XAMPP, WAMP, MAMP). We set up the connection details in the `.env` file.
+*   **PHP:** Version 8.0 or higher.
+*   **Framework:** CodeIgniter 4
+*   **Database:** MySQL set up the connection details in the `.env` file.
 *   **Frontend:** Bootstrap 5 (For styling and layout), basic HTML/CSS.
 *   **Dependencies:** Managed using Composer (a PHP package manager).
 
-## Getting it Running (Setup Guide)
+## Setup Guide
 
 1.  **Download the Code:**
     *   Get the project files (clone the repository or download the ZIP).
@@ -105,11 +105,9 @@ We've focused on making sure the URLs are clean (like `/product/my-cool-gadget` 
 *   **Clean URLs:** We use "slugs" (like `my-cool-product`) in the URLs. These are generated automatically from names when you add stuff in the admin panel. The routes are set up in `app/Config/Routes.php`.
 *   **Page Titles & Descriptions:** The controllers (`CategoryController.php`, `ProductController.php`) grab the data. They check if you entered a custom meta title/description in the admin panel. If yes, they use that. If not, they use the product/category name for the title and make a basic description. This info is passed to the main layout file (`app/Views/layout/base.php`) which puts it in the `<head>` section.
 *   **Schema Code (JSON-LD):** We added `<script type="application/ld+json">` blocks directly in the view files (`category_view.php`, `product_view.php`). This gives search engines structured info about breadcrumbs (page hierarchy) and product details (name, price, image, etc.).
-*   **Sitemap (`sitemap.xml`):** The `SitemapController.php` fetches all categories and products from the database and generates the XML file on the fly when you visit `/sitemap.xml`.
+*   **Sitemap (`sitemap.xml`):** The `SitemapController.php` fetches all categories and products from the database and generates the XML file on the fly when you visit `/sitemap.xml`. **Important:** It uses the `app.baseURL` from your `.env` file, so make sure this is set to your live domain before deploying!
 *   **Robots.txt:** Just a simple text file in the `public` folder telling bots not to crawl `/admin`, `/app`, `/system`, `/writable` and pointing them to the sitemap.
 
 ## Deployment Link
-
-*(You can add the link here once you host it online)*
 
 [http://your-live-website-link.com](http://your-live-website-link.com)
