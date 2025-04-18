@@ -1,6 +1,4 @@
-# Simple Product Website (CodeIgniter 4) - Good for SEO!
-
-Hey folks!
+# Simple Product Website (CodeIgniter 4) 
 
 This is a basic website I put together using CodeIgniter 4 (a PHP framework). The main idea was to build a product listing site that's easy for search engines like Google to understand and rank well (that's the SEO part).
 
