@@ -1,3 +1,7 @@
+![IMG-20250420-WA0004](https://github.com/user-attachments/assets/0c01aa68-9d14-4908-8bc5-e79aa342ea91)
+![IMG-20250420-WA0005](https://github.com/user-attachments/assets/5eea9900-4e23-45f4-846c-f00559b2d18e)
+![IMG-20250420-WA0006](https://github.com/user-attachments/assets/2840ed66-b8d4-46b0-a008-a3db11ace953)
+![IMG-20250420-WA0007](https://github.com/user-attachments/assets/8514c4b6-a9f0-4fb3-ac5b-749ead438119)
 # Simple Product Website (CodeIgniter 4) 
 
 This is a basic website I put together using CodeIgniter 4 (a PHP framework). The main idea was to build a product listing site that's easy for search engines like Google to understand and rank well (that's the SEO part).
