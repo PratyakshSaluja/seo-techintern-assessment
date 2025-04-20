@@ -108,6 +108,3 @@ We've focused on making sure the URLs are clean (like `/product/my-cool-gadget` 
 *   **Sitemap (`sitemap.xml`):** The `SitemapController.php` fetches all categories and products from the database and generates the XML file on the fly when you visit `/sitemap.xml`. **Important:** It uses the `app.baseURL` from your `.env` file, so make sure this is set to your live domain before deploying!
 *   **Robots.txt:** Just a simple text file in the `public` folder telling bots not to crawl `/admin`, `/app`, `/system`, `/writable` and pointing them to the sitemap.
 
-## Deployment Link
-
-[http://your-live-website-link.com](http://your-live-website-link.com)
